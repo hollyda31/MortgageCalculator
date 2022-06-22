@@ -49,7 +49,7 @@ function extras() {
     const second = m - 1;
     const bracket = first / second;
     const subtotal = loanamount * bracket;
-    const total = subtotal + proptaxmon + hoinsmonth + hoamonth;
+    const total = subtotal + proptaxmon + hoinsmonth +hoamonth;
     const Payment = total.toFixed(2);
 
 
