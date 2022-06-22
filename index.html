@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="resources\css\main.css">
+        <script type="text/javascript" src="resources\js\calc.js"></script>
+    </head>
+    <body>
+        <div id="intro">
+            <h1>Mortgage Calculator</h1>
+            <p>These calculators are not intended as financial advice. They apply only to fixed-rate mortgages. Adjustable rate mortgages may have different amortization schedules, so check with your lender.</p>
+        </div>
+        <div id="main">
+            <div id="simple">
+            <h2>Simple Mortgage Calculator</h2>
+                <p><strong>Does Not </strong>Include Property Tax, HOA Fees, etc.</p>
+            <p>This calculator can be used to calculate your estimated monthly payment on a fixed rate mortgage.</p>
+
+                <div>
+                    <h3>Loan Amount</h3>
+                    <p>$  <input type="number" id="loan" /></p>
+                </div>
+    
+                <div>
+                    <h3>Term</h3>
+                    <p><input type="number" id="term" />  years</p>
+                </div>
+    
+                <div>
+                    <h3>Interest Rate</h3>
+                    <p><input type="number" id="interest" />  %</p>
+                </div>
+    
+                <br>
+            
+                <div id="button"><button  onclick="basic()" id="submit">Submit</button></div>
+            
+                <br>
+            
+                <span id="FixedResult"></span>
+        </div>
+
+        <div id="advanced">
+            <h2>Advanced Mortgage Calculator</h2>
+            <p>This <strong>DOES</strong> Include Property Tax, HOA Fees, etc.</p>
+            <p>This calculator can be used to calculate your estimated monthly payment on a fixed rate mortgage.</p>
+
+                <div>
+                    <h3>Property Price</h3>
+                    <p>$  <input type="number" id="price" /></p>
+                </div>
+            
+                <div>
+                    <h3>Down Payment Amount</h3>
+                    <p>$  <input type="number" id="down" /></p>
+                </div>
+    
+                <div>
+                    <h3>Term</h3>
+                    <p><input type="number" id="term" />  years</p>
+                </div>
+    
+                <div>
+                    <h3>Interest Rate</h3>
+                    <p><input type="number" id="interest" />  %</p>
+                </div>
+
+                <div>
+                    <h3>Property Tax Rate</h3>
+                    <p><input type="number" id="proptax" />  %</p>
+                </div>
+
+                <div>
+                    <h3>Homeowner's Insurance Annual Cost</h3>
+                    <p>$  <input type="number" id="hoinsann"></p>
+                </div>
+
+                <div>
+                    <h3>Annual HOA Fees</h3>
+                    <p>$  <input type="number" id="hoayear" /></p>
+                </div>
+
+                <br>
+                <div id="button"><button  onclick="extras()" id="submit">Submit</button></div>
+                            
+                <br>
+            
+                <span id="ExtrasResult"></span>
+        </div>
+    </div>
+    </body>
+</html>
